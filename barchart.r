@@ -20,4 +20,22 @@ head(mtcars)
 ?table
 
 # create table and store it in a object
-cylinder <- table(mtcars$cyl)
+cylinders <- table(mtcars$cyl)
+
+# give bar plot function cylinders object
+# x-axis is telling us the diffeent types of cylinders
+# y-axis is telling us the number of data points in 
+# each type of cylinder
+barplot(cylinders)
+
+# give bar plot function the cylinders object
+# and options
+barplot(cylinders,
+    col = "blue", #blue bar color
+    main = "Mtcars Cylinder Data", # main title
+    xlab = "cylinders", # x-axis label
+    ylab = "Number" # y-axis label
+)
+
+# clear the cylinders object from the global environment
+rm(list = ls())
