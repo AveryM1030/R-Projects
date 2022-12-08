@@ -72,3 +72,10 @@ o3 <- c(T,F,F,T)
 # create a list using the list function
 list1 <- list(o1,o2,o3)
 list1
+
+# create a list that includes a list
+list2 <- list(o1,o2,o3,list1)
+list2
+
+# claer the global environment
+rm(list = ls())
